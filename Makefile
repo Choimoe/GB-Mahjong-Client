@@ -5,8 +5,8 @@ MKDIR		:= mkdir -p
 RMDIR		:= rmdir
 SED			:= sed
 
-CXXFLAGS	:= -std=c++11 -O3
-CXXDFLAGS	:= -std=c++11 -g -Wall
+CXXFLAGS	:= -std=c++11 -O3 -I./third_party/cpp-httplib -I./third_party/json/include
+CXXDFLAGS	:= -std=c++11 -g -Wall -I./third_party/cpp-httplib -I./third_party/json/include
 LDFLAGS		:=
 
 BUILDDIR	:= ./build
